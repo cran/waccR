@@ -1,0 +1,45 @@
+---
+title: "Calculate WACC in R"
+author: "Robert Myles McDonnell"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Calculate WACC in R}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+The Weighted Average Cost of Capital (WACC) represents the average cost of financing a
+company's debt and equity. There are two approches to calculating it, one based on the "Build-up" approach, the other on the Capital Assets Pricing Model (CAPM) approach. 
+
+$$\text{WACC} = C_e \times E + C_d \times D$$
+
+where $C_d$ is the after-tax cost of debt, E and D the proportion of equity and debt in a firm based on market value, and $C_e$ is the cost of equity, which, using the CAPM approach, is calculated with:   
+
+$$C_e = R_f + \beta(R_m) + R_s + \text{Risk} + \text{Firm Risk}$$ 
+
+where $R_f$ is risk-free rate, $R_m$ is the market premium, $R_s$ is the company size premium, *Risk* the [country risk premium](https://github.com/RobertMyles/riscoBrasil), *Firm Risk* the firm-specific risk and $\beta$ is a measure of the systematic risk, usually of the industry sector, in comparison to the market as a whole.  
+
+According to [this](http://www.iese.edu/research/pdfs/DI-0914-E.pdf) paper, most companies do it wrong.  
+
+
+`waccR` make sit *super* easy to get the data for the US:  
+
+```{r}
+library(waccR)
+# WACC: 
+
+wacc_usa <- wacc()
+head(wacc_usa)
+
+```
+
+
+```{r}
+# Industry Betas (US): 
+
+betas_usa <- betas() 
+head(betas_usa)
+```
+

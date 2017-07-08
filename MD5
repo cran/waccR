@@ -1,0 +1,14 @@
+047f7299a78825d4b12ab050e9bae842 *DESCRIPTION
+7bae49302c3e6bdfdfe1375f5851c868 *LICENSE
+dfbbfdd5ddf0aadf37988d900879a581 *NAMESPACE
+a28d3d56b6569fbf7acfb0980cb3043b *R/wacc.R
+ac44105b6a320f848e276895e8212325 *R/zzz.R
+04647b53800f17e8bd5f49b5f4e453a4 *README.md
+91db0b6223a324c8f1214f8673d748c1 *build/vignette.rds
+588e26f16b7141a9fc88603e442b20b5 *inst/doc/Calculate_WACC_in_R.R
+0b11a757cace77ecebffd3e4d8ae5413 *inst/doc/Calculate_WACC_in_R.Rmd
+3dd7beafa5274b70ec81207d73ed116b *inst/doc/Calculate_WACC_in_R.html
+5d92dd683f5a87db8e825d45f1eca560 *man/betas.Rd
+3eadde14ba457dfce2243d687d9b03a5 *man/pipe.Rd
+d377b90fc7cf77866dacc09b4387afca *man/wacc.Rd
+0b11a757cace77ecebffd3e4d8ae5413 *vignettes/Calculate_WACC_in_R.Rmd
